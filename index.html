@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Grading System App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="app-container">
+    <h1>🎓 Student Grading System</h1>
+
+    <div class="form-section">
+      <input type="text" id="name" placeholder="Enter Student Name" />
+      <input type="text" id="roll" placeholder="Enter Roll Number" />
+      <input type="number" id="marks" placeholder="Enter Marks (out of 100)" />
+      <div class="buttons">
+        <button class="add-btn" onclick="addStudent()">Add Student</button>
+        <button class="clear-btn" onclick="clearAll()">Delete All</button>
+      </div>
+    </div>
+
+    <h2>Grade Report</h2>
+    <table id="gradeTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Roll No</th>
+          <th>Marks</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <footer>Developed for <b>Naan Mudhalvan Project</b> © 2025</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
